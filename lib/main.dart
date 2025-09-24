@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       routes: {
         AppRoutes.SplashScreen.route:(context) => SplashScreen(),
-        AppRoutes.IntroScreen.route :(context) => OnBoardingPage(),
+        AppRoutes.IntroScreen.route :(context) => IntroScreen(),
         AppRoutes.HomeScreen.route: (context) => HomeScreen(),
         AppRoutes.ChapterDetails.route: (context) => ChapterDetails(),
       },

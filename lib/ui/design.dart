@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const Color gold = Color(0xFFE2BE7F);
+  static const Color black=Color(0XFF202020);
+  static const Color prime=Color(0xffE2BE7F);
 }
 
 class AppImages {
@@ -11,14 +13,16 @@ class AppImages {
   static const String ic_radio = "assets/images/ic_radio.svg";
   static const String ic_tasbeh = "assets/images/ic_sebha.svg";
   static const String ic_chapter = "assets/images/ic_chapter.svg";
-
+  static const String sebha_logo="assets/images/SebhaBackground.png";
   static const String logo = "assets/images/islami_logo.png";
   static const String imageMostRecent = "assets/images/image_most_recent.png";
-
+  static const String mousqe_logo="assets/images/mosquelogo.png";
+  static const String sebha="assets/images/sebha.png";
   static const String defaultBackground = "assets/images/background.png";
   static const String chapterDetailsBackground =
       "assets/images/chaoter_details_background.png";
   static const String hadethItemBackground = "assets/images/hadeth_item_bg.png";
+  static const String reading="assets/images/reading.png";
 }
 
 class AppThemes {
