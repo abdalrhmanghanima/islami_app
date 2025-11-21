@@ -11,7 +11,7 @@ import 'package:islami_app/ui/home/sebha/SebhaContent.dart';
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'home';
 
-  const HomeScreen({super.key});
+  HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Expanded(
               flex: 8,
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 18),
                 child: tabs[selectedTabIndex],
               ),
             ),
@@ -102,9 +102,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> tabs = [
     QuranContent(),
-    const HadethContent(),
-    const RadioContent(),
-    const SebhaScreen(),
-    const Prayercontent(),
+    HadethContent(),
+    RadioContent(),
+    SebhaScreen(),
+    Prayercontent(),
   ];
 }

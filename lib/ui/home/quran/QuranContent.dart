@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:islami_app/ui/Chapter.dart';
 import 'package:islami_app/ui/design.dart';
+import 'package:islami_app/ui/home/quran/MostRecentSlider.dart';
 import 'package:islami_app/ui/home/quran/chapter_row.dart';
 
 class QuranContent extends StatefulWidget {
@@ -12,13 +13,15 @@ class QuranContent extends StatefulWidget {
 }
 
 class _QuranContentState extends State<QuranContent> {
-  final List<Chapter> chapters = Chapter.getQuranChapters();
+  final List<Chapter> chapters = Chapter.chapters;
   List<Chapter> filterdChapters = [];
 
 
   _QuranContentState() {
     filterdChapters = chapters;
   }
+
+  // state management
 
   @override
   Widget build(BuildContext context) {
@@ -51,6 +54,7 @@ class _QuranContentState extends State<QuranContent> {
               )
           ),
         ),
+        MostRecentSlider(),
         Expanded(
           child: ListView.separated(
             itemBuilder: (context, index) {

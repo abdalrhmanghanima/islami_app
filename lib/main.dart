@@ -12,7 +12,7 @@ import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await MostRecentSharedPreferences
-      .init(); // wait until shared prefences being initialized
+      .init();
   runApp(
       ChangeNotifierProvider(
           create: (context) => MostRecentProvider(),
@@ -22,8 +22,6 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     MostRecentSharedPreferences.getInstance();

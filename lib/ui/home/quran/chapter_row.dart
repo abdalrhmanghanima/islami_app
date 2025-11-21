@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
-import 'package:islami_app/ui/Chapter.dart';
 import 'package:islami_app/ui/design.dart';
 import 'package:islami_app/ui/routes.dart';
+
+import '../../Chapter.dart';
 
 class ChapterRow extends StatelessWidget {
   Chapter chapter;
